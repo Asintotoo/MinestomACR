@@ -48,3 +48,6 @@ public class TestCommand extends Command {
           super("test");  
       }
 }
+```
+
+**Important Note**: Make sure your command class constructor is a *No Args Constructor* otherwise MinestomACR won't be able to register the class.

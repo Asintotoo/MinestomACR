@@ -6,8 +6,6 @@ plugins {
 
 group = "com.asintoto.minestomacr"
 version = "1.0.0"
-java.sourceCompatibility = JavaVersion.VERSION_21
-java.targetCompatibility = JavaVersion.VERSION_21
 
 repositories {
     mavenCentral()

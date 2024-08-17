@@ -1,6 +1,7 @@
 plugins {
     id("java")
     id("com.gradleup.shadow") version "8.3.0"
+    id("maven-publish")
 }
 
 group = "com.asintoto.minestomacr"
@@ -36,5 +37,18 @@ tasks {
     shadowJar {
         mergeServiceFiles()
         archiveClassifier.set("")
+    }
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("mavenJava") {
+            from(components["java"])
+        }
     }
 }

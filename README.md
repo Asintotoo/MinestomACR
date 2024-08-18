@@ -12,7 +12,7 @@ The maven repository is available on [jitpack](https://jitpack.io/#Asintotoo/Min
 
 ## Usage
 
-After having initialized your MinecraftServer, y call `MinestomACR.init()`. This will allow you to use the Auto Registration features.
+After having initialized your MinecraftServer, call `MinestomACR.init()`. This will allow you to use the Auto Registration features.
 
 ```java
 MinecraftServer.init()
@@ -24,7 +24,7 @@ MinestomACR.init();
 
 `MinestomACR.init()` can take a `boolean inverse` as parameter. If not given, the default value will be "false".
 With `MinestomACR.init(false)` or simple `MinestomACR.init()`, in order for a class to be registered, it must be annotated with `@AutoRegister`.
-With `MinestomACR.init(true)`, all the command classes will be registered without needing to annotate them. To NOT register a specific class, simply annotate it with `@DontRegister`.
+With `MinestomACR.init(true)`, all the command classes will be registered without needing to annotate them, but if you want to NOT register a specific class, simply annotate it with `@DontRegister`.
 
 ## Example Usage
 
